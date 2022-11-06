@@ -11,16 +11,32 @@
         background-repeat: no-repeat;
     }
 
-    .note {
-        margin: 1rem;
-        margin-top: 0rem;
-        margin-bottom: 0px;
-        background: #ffebc4;
-        text-align: justify;
-        padding: 1rem;
-        border-radius: 5px;
-        height: 315px;
+    section {
         overflow-y: scroll;
+        height: 79vh;
+    }
+
+    .foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+
+    .foto img {
+        width: 250px;
+        border-radius: 5px;
+    }
+
+    .foto p {
+        color: gray;
+        background: white;
+        width: 250px;
+        margin: 0.5rem;
+        text-align: center;
+        border-radius: 5px;
+        border: gray 1px solid;
     }
 
     .note h1 {
@@ -63,20 +79,29 @@
         <div class="row justify-content-center">
             <div class="col justify-content-center align-items-center d-flex">
                 <div class="box m-3">
-                    <img src="{{ url('assets/img/') . '/' . $img }}" width="95px" alt="ícone banho">
-                    <h1>{{ $titulo ?? 'Canguru' }}</h1>
+                    <img src="{{ url('assets/img/album.png') }}" width="95px" alt="ícone banho">
+                    <h1>Álbum</h1>
                 </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12">
-                <div class="note">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="foto">
+                    <img src="{{ url('assets/img/foto-1.png') }}" alt="1a foto">
+                    <p>1a foto</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="foto">
+                    <img src="{{ url('assets/img/foto-2.png') }}" alt="1a foto">
+                    <p>1a vez no colo</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="foto">
+                    <img src="{{ url('assets/img/foto-3.png') }}" alt="1a foto">
+                    <p>foto da alta hospitalar</p>
                 </div>
             </div>
         </div>

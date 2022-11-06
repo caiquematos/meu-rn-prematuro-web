@@ -5,6 +5,13 @@
 
 
 <style>
+    body {
+        background: url('assets/img/background-2.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+    }
+    
     .referencias {
         margin: 1rem;
         margin-top: 0rem;
@@ -34,7 +41,9 @@
     }
 
     .box img {
-        border-radius: 45px;
+        margin-top: 1rem;
+        height: 110px;
+        width: auto;
     }
 
     .box h1 {
@@ -55,7 +64,7 @@
         <div class="row justify-content-center">
             <div class="col justify-content-center align-items-center d-flex">
                 <div class="box m-3">
-                    <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                    <img src="{{ url('assets/img/books.jpg') }}" width="95px" alt="ícone banho">
                     <h1>Referências</h1>
                 </div>
             </div>

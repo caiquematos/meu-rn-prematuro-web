@@ -4,13 +4,6 @@
 @include('build.head')
 
 <style>
-    body {
-        background: url('assets/img/background-1.png');
-        background-position: center;
-        background-size: 170%;
-        background-repeat: no-repeat;
-    }
-
     .img-thumbnail {
         width: 90px;
         object-fit: scale-down;
@@ -21,7 +14,7 @@
     .box {
         width: 102px;
         height: 102px;
-        background: #F5F5F5;
+        background: #a73c94;
         padding: 12px;
         border-radius: 5px;
         box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
@@ -32,13 +25,17 @@
         width: 102px;
         height: 33px;
         display: flex;
-        color: #666;
+        color: #f8f9fa;
         padding: 1px 0px;
-        font-size: 11px;
+        font-size: 8px;
+        border: 1px solid #ffffffb8;
         line-height: 11px;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
+        background: #742566;
+        border-radius: 5px;
+        box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
         flex-direction: column;
         justify-content: center;
     }
@@ -57,7 +54,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Canguru</p>
-                <a class="stretched-link" href="{{ route('canguru-menu') }}"></a>
+                <a class="stretched-link" href="{{ route('canguru') }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -65,7 +62,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Amamentação</p>
-                <a class="stretched-link" href="{{ route('amamentacao-menu') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -73,7 +70,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Sono e repouso</p>
-                <a class="stretched-link" href="{{ route('sono-menu') }}"></a>
+                <a class="stretched-link" href="{{ route('sono-e-repouso') }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -81,7 +78,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Cuidados de higiene</p>
-                <a class="stretched-link" href="{{ route('cuidados-menu') }}"></a>
+                <a class="stretched-link" href="{{ route('cuidados') }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -89,23 +86,15 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Sinais de alerta</p>
-                <a class="stretched-link" href="{{ route('alerta-menu') }}"></a>
+                <a class="stretched-link" href="{{ route('alerta') }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
                     <img src="{{ url('assets/img/sing.png') }}" class="img-thumbnail rounded mx-auto d-block"
                         alt="Canguru">
                 </div>
-                <p class="title">Estimulação <span>neuropsi<br>comotora</span></p>
-                <a class="stretched-link" href="{{ route('estimulacao-menu') }}"></a>
-            </div>
-            <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
-                <div class="box">
-                    <img src="{{ url('assets/img/album.png') }}" class="img-thumbnail rounded mx-auto d-block"
-                        alt="Album">
-                </div>
-                <p class="title">Álbum</span></p>
-                <a class="stretched-link" href="{{ route('album') }}"></a>
+                <p class="title">Estimulação <span style="font-size: 8px">neuropsicomotora</span></p>
+                <a class="stretched-link" href="{{ route('estimulacao') }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">

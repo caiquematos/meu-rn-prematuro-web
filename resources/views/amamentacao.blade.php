@@ -4,6 +4,18 @@
 @include('build.head')
 
 <style>
+    body {
+        background: url('assets/img/background-2.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+    }
+
+    #carouselExampleDark {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background: white;
+    }
+
     #main {
         padding: 22px;
     }
@@ -30,6 +42,8 @@
 
     .content img {
         margin-top: 1rem;
+        height: 110px;
+        width: auto;
     }
 
     .content h1 {
@@ -74,7 +88,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/amamentacao.jpg') }}" width="95px" alt="ícone banho">
                         <h1>Amamentação</h1>
                         <div class="text-box">
                             <p style="color:black;text-align:left;font-style:italic">
@@ -128,7 +142,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/aleitamento.jpg') }}" width="95px" alt="ícone banho">
                         <h1>Incentivo ao aleitamento</h1>
                         <div class="text-box">
                             <p style="color:black;">Ao contrário do leite de fórmula infantil, o seu leite possui
@@ -156,7 +170,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/formas.jpg') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Posição e pega</h1>
                         <div class="text-box">
                             <p style="color:black;">Para evitar traumas nas suas mamas e oferecer o leite materno de
@@ -172,14 +186,9 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/canguru-amamentacao.jpg') }}" width="95px" alt="ícone banho">
                         <h1>Formas de amamentar</h1>
                         <div class="text-box">
-                            <img class="mb-3" src="{{ url('assets/img/banho.jpg') }}" width="95px"
-                                alt="ícone banho">
-                            <img class="mb-3" src="{{ url('assets/img/banho.jpg') }}" width="95px"
-                                alt="ícone banho">
-
                             <p style="color:black;">A posição sentada pode permitir o descanso dos pés em travesseiros,
                                 o cruzamento das pernas e a realização de atividades como leitura de um livro, caso
                                 queira. A posição deitada permite o apoio na cama, onde é possível colocar o pescoço e o
@@ -189,11 +198,11 @@
                                 possível realizar o apoio da cabeça e do corpo com uma de suas mãos em formato de “C”,
                                 onde o dedo polegar e o indicador sustentam a cabeça; os demais dedos, apoiados nas
                                 costas do neném, mantém a sustentação do corpo (BRASIL, 2007).</p>
+                            <img class="mb-3" src="{{ url('assets/img/forma-1.png') }}" width="95px"
+                                alt="ícone banho">
+                            <img class="mb-3" src="{{ url('assets/img/forma-2.png') }}" width="95px"
+                                alt="ícone banho">
 
-                            <img class="mb-3" src="{{ url('assets/img/banho.jpg') }}" width="95px"
-                                alt="ícone banho">
-                            <img class="mb-3" src="{{ url('assets/img/banho.jpg') }}" width="95px"
-                                alt="ícone banho">
                             <p style="color:black;">Todas as formas de amamentar visam evitar feridas, fissuras e
                                 traumas diversos nas suas mamas. Desta forma, sempre observe se seu bebê está
                                 posicionado corretamente e se você está confortável com o momento, ou seja, sem dores. A
@@ -202,12 +211,17 @@
                                 invertida, você deverá segurar seu bebê como se fosse uma bola de jogo de futebol
                                 americano, mantendo-o ao lado do seu corpo e utilizando sua mão (neste mesmo lado) para
                                 sustentar a cabeça e corpo do bebê (BRASIL, 2007; BARBOSA et al., 2017).</p>
+
+                            <img class="mb-3" src="{{ url('assets/img/forma-3.png') }}" width="95px"
+                                alt="ícone banho">
+                            <img class="mb-3" src="{{ url('assets/img/forma-4.png') }}" width="95px"
+                                alt="ícone banho">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/mamadeira.jpg') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Doe leite materno</h1>
                         <div class="text-box">
                             <p style="color:black;">Lista de alguns locais onde é possível realizar doação de leite
@@ -247,7 +261,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/extracao.jpg') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Extração e armazenamento</h1>
                         <div class="text-box">
                             <p style="color:black;">Caso haja a necessidade de ausência no momento da amamentação
@@ -286,7 +300,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/mama.jpg') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Cuidados com a mama</h1>
                         <div class="text-box">
                             <p style="color:black;">As orientações, com relação ao momento do aleitamento materno, visam

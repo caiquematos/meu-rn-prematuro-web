@@ -4,6 +4,18 @@
 @include('build.head')
 
 <style>
+    body {
+        background: url('assets/img/background-2.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+    }
+
+    #carouselExampleDark {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background: white;
+    }
+
     #main {
         padding: 22px;
     }
@@ -30,6 +42,8 @@
 
     .content img {
         margin-top: 1rem;
+        height: 110px;
+        width: auto;
     }
 
     .content h1 {
@@ -70,7 +84,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/fever.png') }}" width="95px" alt="ícone banho">
                         <h1>Temperatura corporal</h1>
                         <div class="text-box">
                             <p style="color:black;">Durante os cuidados no domicílio, alguns sinais de alerta podem ser
@@ -89,8 +103,8 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
-                        <h1>Como estou respirando</h1>
+                        <img src="{{ url('assets/img/lungs.png') }}" width="95px" alt="ícone banho">
+                        <h1>Como estou respirando?</h1>
                         <div class="text-box">
                             <p style="color:black;">Perceba se seu bebê está apresentando cansaço aparente, dificuldades
                                 para respirar, alteração visível do tórax e abdômen e aparecimento de secreção em área
@@ -101,7 +115,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/baby-skin-2.png') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Coloração da pele</h1>
                         <div class="text-box">
                             <p style="color:black;">A coloração da pele do bebê prematuro é um importante marcador de
@@ -118,7 +132,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/importante.png') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Importante</h1>
                         <div class="text-box">
                             <p style="color:black;">Você deverá, inclusive, prestar atenção nos sinais de prostração,
@@ -130,7 +144,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/cry.png') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Por que estou chorando?</h1>
                         <div class="text-box">
                             <p style="color:black;">Ainda falando sobre os sinais de alerta, note se seu bebê apresenta
@@ -146,7 +160,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/poop.png') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Fezes e urina</h1>
                         <div class="text-box">
                             <p style="color:black;">No momento da troca de fraldas, atente para o aspecto das

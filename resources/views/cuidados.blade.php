@@ -4,6 +4,18 @@
 @include('build.head')
 
 <style>
+    body {
+        background: url('assets/img/background-2.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+    }
+
+    #carouselExampleDark {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background: white;
+    }
+
     #main {
         padding: 22px;
     }
@@ -30,6 +42,8 @@
 
     .content img {
         margin-top: 1rem;
+        height: 110px;
+        width: auto;
     }
 
     .content h1 {
@@ -70,7 +84,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/fralda.png') }}" width="95px" alt="ícone banho">
                         <h1>Fralda</h1>
                         <div class="text-box">
                             <p style="color:black;">Para realizar a troca da fralda, é importante evitar a elevação das
@@ -86,7 +100,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/doubt.png') }}" width="95px" alt="ícone banho">
                         <h1>Dúvidas</h1>
                         <div class="text-box">
                             <p style="color:black;">Não se esqueça de realizar a limpeza do coto umbilical sempre após o
@@ -105,7 +119,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/note.png') }}" width="95px" alt="ícone banho">
                         <h1>Dúvidas</h1>
                         <div class="text-box">
                             <p style="color:black;">Adicione anotações sobre dúvidas ou observações relacionadas ao
@@ -116,7 +130,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/baby-skin.png') }}" width="95px" alt="ícone banho">
                         <h1>Pele do bebê</h1>
                         <div class="text-box">
                             <p style="color:black;">A pele do seu bebê é extremamente sensível e deve ser um ponto de
@@ -131,7 +145,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/bathing.png') }}" width="95px" alt="ícone banho">
                         <h1>Hora do banho</h1>
                         <div class="text-box">
                             <p style="color:black;">O momento do banho deve ser realizado em um ambiente calmo, seguro e
@@ -155,7 +169,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/cosmetics.png') }}" width="95px" alt="ícone banho">
                         <h1>Posso usar?</h1>
                         <div class="text-box">
                             <p style="color:black;">Evite sabonetes que alteram o pH da pele do seu bebê, pois os
@@ -166,7 +180,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/video.png') }}" width="95px" alt="ícone banho">
                         <h1>Playlist</h1>
                         <div class="text-box">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/0nL3hojYCqk"

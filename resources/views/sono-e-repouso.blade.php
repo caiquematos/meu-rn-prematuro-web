@@ -4,6 +4,18 @@
 @include('build.head')
 
 <style>
+    body {
+        background: url('assets/img/background-2.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+    }
+
+    #carouselExampleDark {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background: white;
+    }
+
     #main {
         padding: 22px;
     }
@@ -30,6 +42,8 @@
 
     .content img {
         margin-top: 1rem;
+        height: 110px;
+        width: auto;
     }
 
     .content h1 {
@@ -70,7 +84,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/sleep-duration.jpg') }}" width="95px" alt="ícone banho">
                         <h1>Tempo de sono</h1>
                         <div class="text-box">
                             <p style="color:black;">Adicione anotações sobre o tempo de sono e vigília do seu bebê</p>
@@ -81,7 +95,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/baby-mother-sleep.png') }}" width="95px" alt="ícone banho">
                         <h1>Posição para dormir</h1>
                         <div class="text-box">
                             <p style="color:black;">No momento do sono, é importante manter seu bebê em posição dorsal,
@@ -94,20 +108,20 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/sono.jpg') }}" width="95px" alt="ícone banho">
                         <h1>Posição para dormir</h1>
                         <div class="text-box">
-                            <img class="mb-3" src="{{ url('assets/img/banho.jpg') }}" width="95px"
-                                alt="ícone banho">
+                            <img class="mb-3" src="{{ url('assets/img/sleep-side.png') }}" width="95px"
+                                style="height: 200px;border: 1px solid #dddddd;margin-top: 0.5rem;" alt="ícone banho">
                             <p
-                                style="color: #ff0000;font-weight: bold;font-size: 2rem;font-family: system-ui;line-height: 30px;text-align: center;text-shadow: -2px 3px 4px #12191d54;">
-                                ESTE LADO PARA CIMA</p>
+                                style="color: red;font-weight: bold;background: yellow;font-size: 1.7rem;font-family: system-ui;padding: 9px;border-radius: 5px;line-height: 30px;text-align: center;text-shadow: -2px 3px 4px #12191d54;">
+                                ESTE LADO<br>PARA CIMA</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/berco.jpg') }}" width="95px" alt="ícone banho">
                         <h1>Orientações</h1>
                         <div class="text-box">
                             <p style="color:black;">Coloque o berço do seu bebê próximo à sua cama para que não durma na

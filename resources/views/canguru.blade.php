@@ -4,6 +4,18 @@
 @include('build.head')
 
 <style>
+    body {
+        background: url('assets/img/background-2.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+    }
+
+    #carouselExampleDark {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background: white;
+    }
+
     #main {
         padding: 22px;
     }
@@ -30,6 +42,8 @@
 
     .content img {
         margin-top: 1rem;
+        height: 110px;
+        width: auto;
     }
 
     .content h1 {
@@ -70,7 +84,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/canguru-original.png') }}" width="95px" alt="ícone banho">
                         <h1>Canguru</h1>
                         <div class="text-box">
                             <p style="color:black;">A 3ª etapa do Método Canguru inicia-se no momento da alta
@@ -86,7 +100,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/sing.png') }}" width="95px" alt="ícone banho">
                         <h1>Incentivo</h1>
                         <div class="text-box">
                             <p style="color:black;">Cante para o seu bebê. Seu RN precisa do contato pele a pele, seu
@@ -99,12 +113,15 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/canguru-2.png') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Como fazer a posição canguru?</h1>
                         <div class="text-box">
-                            <p style="color:black;">Cante para o seu bebê. Seu RN precisa do contato pele a pele, seu
-                                toque estimula o cérebro do RN. Que tal ficar nessa posição mais um pouco? A música
-                                ajuda a relaxar.
+                            <p style="color:black;">Deixe seu bebê apenas com a fralda, meias e touca; ou seja, evite
+                                colocar roupas que cubram o corpo neste momento. Retire seu sutiã e coloque uma faixa ou
+                                algo que proporcione contenção junto ao seu corpo e que seja confortável para ambos, de
+                                forma que permita que realize outras atividades diárias, caso queira. Coloque o bebê
+                                junto ao seu corpo, dentro da faixa, para proporcionar o contato pele a pele. Evite
+                                amarrar a faixa na região das costas para não provocar desconforto (BRASIL, 2018).
                             </p>
                         </div>
                     </div>
@@ -112,7 +129,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/video.png') }}" width="95px" alt="ícone banho">
                         <h1>Playlist</h1>
                         <div class="text-box">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/CHWmsS5tVuo"
@@ -125,7 +142,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/note.png') }}" width="95px" alt="ícone banho">
                         <h1>Anotações</h1>
                         <div class="text-box">
                             <p style="color:black;">Adicione observações sobre a posição canguru para apresentar na

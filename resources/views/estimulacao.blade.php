@@ -4,6 +4,18 @@
 @include('build.head')
 
 <style>
+    body {
+        background: url('assets/img/background-2.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+    }
+
+    #carouselExampleDark {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background: white;
+    }
+
     #main {
         padding: 22px;
     }
@@ -30,6 +42,8 @@
 
     .content img {
         margin-top: 1rem;
+        height: 110px;
+        width: auto;
     }
 
     .content h1 {
@@ -78,7 +92,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/brain.png') }}" width="95px" alt="ícone banho">
                         <h1>Estimulação neuropsicomotora</h1>
                         <div class="text-box">
                             <p style="color:black;">
@@ -105,7 +119,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="30000">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/sing.png') }}" width="95px" alt="ícone banho">
                         <h1>Estimulação neuropsicomotora</h1>
                         <div class="text-box">
                             <p style="color:black;">Durante as atividades, busque realizar ações como olhar nos olhos,
@@ -130,7 +144,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/massagem.png') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Massagem</h1>
                         <div class="text-box">
                             <p style="color:black;">A realização da massagem e da cinesiterapia é uma prática relevante
@@ -155,7 +169,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="content d-flex w-100 h-100">
-                        <img src="{{ url('assets/img/banho.jpg') }}" width="95px" alt="ícone banho">
+                        <img src="{{ url('assets/img/toys.png') }}" width="95px" alt="ícone banho">
                         <h1 style="font-size:1.1rem">Arte</h1>
                         <div class="text-box">
                             <p style="color:black;">A atenção visual imatura devido à prematuridade tem sido evidenciada
