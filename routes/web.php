@@ -30,28 +30,28 @@ Route::get('/perfil', function () {
     return view('perfil')->with('page', 'perfil');
 })->name('perfil');
 
-Route::get('/estimulacao', function () {
-    return view('estimulacao');
+Route::get('/estimulacao/{index}', function ($index) {
+    return view('estimulacao')->with('index', $index);;
 })->name('estimulacao');
 
-Route::get('/alerta', function () {
-    return view('alerta');
+Route::get('/alerta/{index}', function ($index) {
+    return view('alerta')->with('index', $index);;
 })->name('alerta');
 
-Route::get('/cuidados', function () {
-    return view('cuidados');
+Route::get('/cuidados/{index}', function ($index) {
+    return view('cuidados')->with('index', $index);;
 })->name('cuidados');
 
-Route::get('/sono-e-repouso', function () {
-    return view('sono-e-repouso');
+Route::get('/sono-e-repouso/{index}', function ($index) {
+    return view('sono-e-repouso')->with('index', $index);
 })->name('sono-e-repouso');
 
-Route::get('/amamentacao', function () {
-    return view('amamentacao');
+Route::get('/amamentacao/{index}', function ($index) {
+    return view('amamentacao')->with('index', $index);;
 })->name('amamentacao');
 
-Route::get('/canguru', function () {
-    return view('canguru');
+Route::get('/canguru/{index}', function ($index) {
+    return view('canguru')->with('index', $index);
 })->name('canguru');
 
 /** Menu */

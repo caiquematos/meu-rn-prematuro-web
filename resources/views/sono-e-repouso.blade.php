@@ -156,11 +156,14 @@
     <script>
         var carousel = null;
         var paused = 0;
+        var index = parseInt("{{ $index ?? 0 }}");
         $(() => {
             $('#carouselExampleDark').carousel({
                 interval: 30000,
                 pause: false
             });
+
+            $('#carouselExampleDark').carousel(index);
 
         })
 

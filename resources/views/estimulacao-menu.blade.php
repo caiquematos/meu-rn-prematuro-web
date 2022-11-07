@@ -20,6 +20,7 @@
         text-align: center;
         margin: 1rem;
         margin-bottom: 0px;
+        color: #555353;
         font-size: larger;
         text-transform: uppercase;
         font-weight: 700;
@@ -78,7 +79,7 @@
                         alt="estimulacao">
                 </div>
                 <p class="title">Estimulação neuropsi<br>comotora</p>
-                <a class="stretched-link" href="{{ route('estimulacao') }}"></a>
+                <a class="stretched-link" href="{{ route('estimulacao', ['index' => 0]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -86,7 +87,7 @@
                         alt="estimulacao">
                 </div>
                 <p class="title">Massagem</p>
-                <a class="stretched-link" href="{{ route('estimulacao') }}"></a>
+                <a class="stretched-link" href="{{ route('estimulacao', ['index' => 2]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -94,7 +95,7 @@
                         alt="estimulacao">
                 </div>
                 <p class="title">Arte</p>
-                <a class="stretched-link" href="{{ route('estimulacao') }}"></a>
+                <a class="stretched-link" href="{{ route('estimulacao', ['index' => 3]) }}"></a>
             </div>
         </div>
         <button class="btn btn-light" onclick="goto()">INICIAR</button>
@@ -111,7 +112,7 @@
         })
 
         function goto() {
-            window.location.href = "{{ route('estimulacao') }}";
+            window.location.href = "{{ route('estimulacao', ['index' => 0]) }}";
         }
     </script>
 

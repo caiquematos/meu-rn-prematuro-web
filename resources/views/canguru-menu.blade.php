@@ -20,6 +20,7 @@
         text-align: center;
         margin: 1rem;
         margin-bottom: 0px;
+        color: #555353;
         font-size: larger;
         text-transform: uppercase;
         font-weight: 700;
@@ -77,7 +78,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Canguru</p>
-                <a class="stretched-link" href="{{ route('canguru') }}"></a>
+                <a class="stretched-link" href="{{ route('canguru', ['index' => 0]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -85,7 +86,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Incentivo</p>
-                <a class="stretched-link" href="{{ route('canguru') }}"></a>
+                <a class="stretched-link" href="{{ route('canguru', ['index' => 1]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -93,7 +94,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Como fazer a posição canguru?</p>
-                <a class="stretched-link" href="{{ route('canguru') }}"></a>
+                <a class="stretched-link" href="{{ route('canguru', ['index' => 2]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -101,7 +102,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Playlist</p>
-                <a class="stretched-link" href="{{ route('canguru') }}"></a>
+                <a class="stretched-link" href="{{ route('canguru', ['index' => 3]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -109,7 +110,7 @@
                         alt="Canguru">
                 </div>
                 <p class="title">Anotações</p>
-                <a class="stretched-link" href="{{ route('canguru') }}"></a>
+                <a class="stretched-link" href="{{ route('canguru', ['index' => 4]) }}"></a>
             </div>
 
         </div>
@@ -127,7 +128,7 @@
         })
 
         function goto() {
-            window.location.href = "{{ route('canguru') }}";
+            window.location.href = "{{ route('canguru', ['index' => 0]) }}";
         }
     </script>
 

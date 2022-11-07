@@ -22,6 +22,7 @@
         margin-bottom: 0px;
         font-size: larger;
         text-transform: uppercase;
+        color: #555353;
         font-weight: 700;
     }
 
@@ -78,7 +79,7 @@
                         alt="amamentacao">
                 </div>
                 <p class="title">Amamentação</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao', ['index' => 0]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -86,7 +87,7 @@
                         alt="amamentacao">
                 </div>
                 <p class="title">Incentivo ao aleitamento</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao', ['index' => 1]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -94,7 +95,7 @@
                         alt="amamentacao">
                 </div>
                 <p class="title">Posição e pega</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao', ['index' => 2]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -102,7 +103,7 @@
                         class="img-thumbnail rounded mx-auto d-block" alt="amamentacao">
                 </div>
                 <p class="title">Formas de amamentar</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao', ['index' => 3]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -110,7 +111,7 @@
                         alt="amamentacao">
                 </div>
                 <p class="title">Doe leite materno</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao', ['index' => 4]) }}"></a>
             </div>
 
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
@@ -119,7 +120,7 @@
                         alt="amamentacao">
                 </div>
                 <p class="title">Extração e armazenamento</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao', ['index' => 5]) }}"></a>
             </div>
 
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
@@ -128,7 +129,7 @@
                         alt="amamentacao">
                 </div>
                 <p class="title">Cuidados com a mama</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('amamentacao', ['index' => 6]) }}"></a>
             </div>
 
 
@@ -148,7 +149,7 @@
         })
 
         function goto() {
-            window.location.href = "{{ route('amamentacao') }}";
+            window.location.href = "{{ route('amamentacao', ['index' => 0]) }}";
         }
     </script>
 

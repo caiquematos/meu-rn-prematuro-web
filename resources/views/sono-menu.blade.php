@@ -20,6 +20,7 @@
         text-align: center;
         margin: 1rem;
         margin-bottom: 0px;
+        color: #555353;
         font-size: larger;
         text-transform: uppercase;
         font-weight: 700;
@@ -74,26 +75,26 @@
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
                     <img src="{{ url('assets/img/sleep-duration.jpg') }}" class="img-thumbnail rounded mx-auto d-block"
-                        alt="amamentacao">
+                        alt="sono-e-repouso">
                 </div>
                 <p class="title">Tempo de sono</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('sono-e-repouso', ['index' => 0]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
                     <img src="{{ url('assets/img/baby-mother-sleep.png') }}"
-                        class="img-thumbnail rounded mx-auto d-block" alt="amamentacao">
+                        class="img-thumbnail rounded mx-auto d-block" alt="sono-e-repouso">
                 </div>
                 <p class="title">Posição para dormir</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('sono-e-repouso', ['index' => 1]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
                     <img src="{{ url('assets/img/berco.jpg') }}" class="img-thumbnail rounded mx-auto d-block"
-                        alt="amamentacao">
+                        alt="sono-e-repouso">
                 </div>
                 <p class="title">Orientações</p>
-                <a class="stretched-link" href="{{ route('amamentacao') }}"></a>
+                <a class="stretched-link" href="{{ route('sono-e-repouso', ['index' => 3]) }}"></a>
             </div>
         </div>
         <button class="btn btn-light" onclick="goto()">INICIAR</button>
@@ -110,7 +111,7 @@
         })
 
         function goto() {
-            window.location.href = "{{ route('sono-e-repouso') }}";
+            window.location.href = "{{ route('sono-e-repouso', ['index' => 0]) }}";
         }
     </script>
 

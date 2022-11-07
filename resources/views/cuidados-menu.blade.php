@@ -21,6 +21,7 @@
         margin: 1rem;
         margin-bottom: 0px;
         font-size: larger;
+        color: #555353;
         text-transform: uppercase;
         font-weight: 700;
     }
@@ -77,7 +78,7 @@
                         alt="cuidados">
                 </div>
                 <p class="title">Fralda</p>
-                <a class="stretched-link" href="{{ route('cuidados') }}"></a>
+                <a class="stretched-link" href="{{ route('cuidados', ['index' => 0]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -85,7 +86,7 @@
                         alt="cuidados">
                 </div>
                 <p class="title">Dúvidas</p>
-                <a class="stretched-link" href="{{ route('cuidados') }}"></a>
+                <a class="stretched-link" href="{{ route('cuidados', ['index' => 1]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -93,7 +94,7 @@
                         alt="cuidados">
                 </div>
                 <p class="title">Pele do bebê</p>
-                <a class="stretched-link" href="{{ route('cuidados') }}"></a>
+                <a class="stretched-link" href="{{ route('cuidados', ['index' => 3]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -101,7 +102,7 @@
                         alt="cuidados">
                 </div>
                 <p class="title">Hora do banho</p>
-                <a class="stretched-link" href="{{ route('cuidados') }}"></a>
+                <a class="stretched-link" href="{{ route('cuidados', ['index' => 4]) }}"></a>
             </div>
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
@@ -109,7 +110,7 @@
                         alt="cuidados">
                 </div>
                 <p class="title">Posso usar?</p>
-                <a class="stretched-link" href="{{ route('cuidados') }}"></a>
+                <a class="stretched-link" href="{{ route('cuidados', ['index' => 5]) }}"></a>
             </div>
 
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
@@ -118,7 +119,7 @@
                         alt="cuidados">
                 </div>
                 <p class="title">Playlist</p>
-                <a class="stretched-link" href="{{ route('cuidados') }}"></a>
+                <a class="stretched-link" href="{{ route('cuidados', ['index' => 6]) }}"></a>
             </div>
         </div>
         <button class="btn btn-light" onclick="goto()">INICIAR</button>
@@ -135,7 +136,7 @@
         })
 
         function goto() {
-            window.location.href = "{{ route('cuidados') }}";
+            window.location.href = "{{ route('cuidados', ['index' => 0]) }}";
         }
     </script>
 
