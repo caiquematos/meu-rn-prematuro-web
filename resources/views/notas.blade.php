@@ -7,7 +7,7 @@
     body {
         background: url('assets/img/background-1.png');
         background-position: center;
-        background-size: 170%;
+        background-size: 100vh;
         background-repeat: no-repeat;
     }
 

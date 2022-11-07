@@ -5,9 +5,9 @@
 
 <style>
     body {
-        background: url('assets/img/background-2.png');
+        background: url('../assets/img/background-2.png');
         background-position: center;
-        background-size: 170%;
+        background-size: 100vh;
         background-repeat: no-repeat;
     }
 
@@ -86,6 +86,7 @@
                     <div class="content d-flex w-100 h-100">
                         <img src="{{ url('assets/img/canguru-original.png') }}" width="95px" alt="ícone banho">
                         <h1>Canguru</h1>
+                        <p>voltar ao menu</p>
                         <div class="text-box">
                             <p style="color:black;">A 3ª etapa do Método Canguru inicia-se no momento da alta
                                 hospitalar, em que o recém-nascido prematuro e/ou de baixo peso não necessita mais de

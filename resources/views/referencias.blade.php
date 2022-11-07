@@ -8,10 +8,10 @@
     body {
         background: url('assets/img/background-2.png');
         background-position: center;
-        background-size: 170%;
+        background-size: 100vh;
         background-repeat: no-repeat;
     }
-    
+
     .referencias {
         margin: 1rem;
         margin-top: 0rem;
@@ -20,7 +20,7 @@
         text-align: justify;
         padding: 1rem;
         border-radius: 5px;
-        height: 315px;
+        height: 48vh;
         overflow-y: scroll;
     }
 
@@ -43,6 +43,7 @@
     .box img {
         margin-top: 1rem;
         height: 110px;
+        border-radius: 8px;
         width: auto;
     }
 

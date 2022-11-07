@@ -5,10 +5,10 @@
 
 <style>
     .img-thumbnail {
-        width: 90px;
+        width: 80px !important;
         object-fit: scale-down;
-        height: 78px;
-        border-radius: 45px !important;
+        height: 80px;
+        border-radius: 40px !important;
     }
 
     .box {

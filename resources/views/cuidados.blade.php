@@ -5,9 +5,9 @@
 
 <style>
     body {
-        background: url('assets/img/background-2.png');
+        background: url('../assets/img/background-2.png');
         background-position: center;
-        background-size: 170%;
+        background-size: 100vh;
         background-repeat: no-repeat;
     }
 

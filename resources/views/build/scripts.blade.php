@@ -5,6 +5,48 @@
 
  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 
+ <!-- Session functions AND Pnotify functions-->
+
+ <!-- Verifica se há erros na sessão -->
+ @if ($errors->any())
+     @php
+         $sessao_erros = '';
+         foreach ($errors->all() as $error):
+             $sessao_erros .= $error;
+         endforeach;
+     @endphp
+     <script>
+         //  new PNotify({
+         //      title: 'Opa!',
+         //      text: "{{ $sessao_erros }}",
+         //      type: 'error',
+         //      styling: 'bootstrap3'
+         //  });
+         console.log("Erro", "{{ $sessao_erros }}");
+     </script>
+ @endif
+
+ <!-- Verifica se há mensagem de sucesso na sessão -->
+ @if (session('success'))
+     <script>
+         // new PNotify({
+         //     title: 'Sucesso',
+         //     text: "{{ session('success') }}",
+         //     type: 'success',
+         //     styling: 'bootstrap3'
+         // });
+         console.log("Sucesso", "{{ session('success') }}");
+     </script>
+ @endif
+
+ @if (isset($success))
+     <script>
+         console.log("há uma mensagem 'success' returned as var.", "{{ $success }}");
+     </script>
+ @endif
+
+ <!-- /Session functions -->
+
  <script>
      // Import the functions you need from the SDKs you need
      const initializeApp = require("firebase/app");

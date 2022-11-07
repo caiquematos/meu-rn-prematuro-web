@@ -7,7 +7,7 @@
     body {
         background: url('assets/img/background-1.png');
         background-position: center;
-        background-size: 170%;
+        background-size: 100vh;
         background-repeat: no-repeat;
     }
 
@@ -27,10 +27,10 @@
     }
 
     .img-thumbnail {
-        width: 90px;
+        width: 80px !important;
         object-fit: scale-down;
-        height: 78px;
-        border-radius: 45px !important;
+        height: 80px;
+        border-radius: 40px !important;
     }
 
     .box {
@@ -71,7 +71,7 @@
     <!-- main content -->
     <section class="wrapper" style="display: none;">
         <h1>Sono e repouso</h1>
-        <div class="row p-3 m-3">
+        <div class="row p-3 m-3 mb-0">
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
                     <img src="{{ url('assets/img/sleep-duration.jpg') }}" class="img-thumbnail rounded mx-auto d-block"
