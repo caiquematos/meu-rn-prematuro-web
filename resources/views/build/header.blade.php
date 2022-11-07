@@ -13,10 +13,18 @@
         line-height: 16px;
         color: #9B3C94;
         margin: 0px;
+        font-family: "Inter";
     }
 
+    .dark-logo .part-1 {
+        font-family: 'Island Moments';
+        font-size: xx-large;
+    }
+
+
     .dark-logo .part-2 {
-        font-weight: bold;
+        font-weight: 900;
+        font-family: "Inter Bold";
     }
 
     .carousel-dark .carousel-indicators [data-bs-target] {

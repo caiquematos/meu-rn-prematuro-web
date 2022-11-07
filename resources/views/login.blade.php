@@ -33,12 +33,18 @@
         line-height: 20px;
         color: #a73c94;
         font-size: 18px;
-        font-family: sans-serif;
+        font-family: 'Inter';
         margin: 0px;
+    }
+
+    .dark-logo .part-1 {
+        font-family: 'Island Moments';
+        font-size: xx-large;
     }
 
     .dark-logo .part-2 {
         font-weight: 900;
+        font-family: "Inter Bold";
     }
 
     input {
@@ -46,7 +52,7 @@
         border: unset !important;
     }
 
-    button {
+    .btn {
         width: 100%;
         background: #a73c94;
         border: unset;

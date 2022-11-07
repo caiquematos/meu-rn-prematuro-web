@@ -49,8 +49,8 @@
     @include('build.header')
 
     <!-- main content -->
-    <section>
-        <div class="row p-3">
+    <section class="wrapper" style="display: none;">
+        <div class=" row p-3">
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
                 <div class="box">
                     <img src="{{ url('assets/img/canguru-original.png') }}" class="img-thumbnail rounded mx-auto d-block"
@@ -115,6 +115,14 @@
                 <p class="title">Referências</p>
                 <a class="stretched-link" href="{{ route('referencias') }}"></a>
             </div>
+            <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
+                <div class="box">
+                    <img src="{{ url('assets/img/colo.jpg') }}" class="img-thumbnail rounded mx-auto d-block"
+                        alt="Colo">
+                </div>
+                <p class="title">Perfil</p>
+                <a class="stretched-link" href="{{ route('referencias') }}"></a>
+            </div>
         </div>
     </section>
     <!-- /main content -->
@@ -122,6 +130,12 @@
     @include('build.footer')
 
     @include('build.scripts')
+
+    <script>
+        $(() => {
+            $(".wrapper").slideDown();
+        })
+    </script>
 
 </body>
 

@@ -68,7 +68,7 @@
     @include('build.header')
 
     <!-- main content -->
-    <section>
+    <section class="wrapper" style="display: none;">
         <h1>Sinais de alerta</h1>
         <div class="row p-3 m-3">
             <div class="col-4 position-relative d-flex align-items-center justify-content-center flex-column">
@@ -130,6 +130,10 @@
     @include('build.scripts')
 
     <script>
+        $(() => {
+            $(".wrapper").slideDown();
+        })
+
         function goto() {
             window.location.href = "{{ route('alerta') }}";
         }

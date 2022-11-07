@@ -32,12 +32,18 @@
         line-height: 40px;
         color: white;
         font-size: 35px;
-        font-family: sans-serif;
+        font-family: 'Inter';
         margin: 0px;
+    }
+
+    .dark-logo .part-1 {
+        font-family: 'Island Moments';
+        font-size: 60px;
     }
 
     .dark-logo .part-2 {
         font-weight: 900;
+        font-family: "Inter Bold";
     }
 </style>
 
@@ -58,7 +64,7 @@
 
             setTimeout(() => {
                 window.location.href = "{{ route('login') }}";
-            }, 2000);
+            }, 4000);
         })
     </script>
 </body>

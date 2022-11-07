@@ -5,6 +5,7 @@
      <title>{{ env('APP_NAME') }}</title>
 
      <!-- Fonts -->
+     <link href="{{ url('assets/fonts/stylesheet.css') }}" rel="stylesheet">
      <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
      <!-- Font Awesome 5 -->
      <script src="https://kit.fontawesome.com/0e212b5112.js" crossorigin="anonymous"></script>
